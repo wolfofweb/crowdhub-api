@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.use(Express.json())
 //FOR CROSS ORIGIN(DIFFERENT HOSTS)
 app.use(cors({
-    origin: "https://main--gorgeous-mooncake-5317d9.netlify.app/"
+    origin: "https://main--gorgeous-mooncake-5317d9.netlify.app"
 }))
 app.use(cookieParser())
 
