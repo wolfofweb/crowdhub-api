@@ -48,7 +48,7 @@ app.use("/api/likes", likeRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/relationships", relationshipRoutes)
 
-
+const PORT=8800;
 //STARTING THE BACKEND SERVER
 app.listen(process.env.PORT||PORT, () => {
     console.log(`API WORKING!!! on ${PORT}`)
