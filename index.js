@@ -50,6 +50,6 @@ app.use("/api/relationships", relationshipRoutes)
 
 
 //STARTING THE BACKEND SERVER
-app.listen(8800, () => {
-    console.log("API WORKING!!!")
+app.listen(process.env.PORT|PORT, () => {
+    console.log(`API WORKING!!! on ${PORT}`)
 })
