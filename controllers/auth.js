@@ -52,10 +52,10 @@ export const login = (req, res) => {
         res.cookie("accessToken", token, {
             httpOnly: true,
        secure:true,
-       sameSite:'none',
-       domain: '.netlify.app'
+       sameSite:'none'
         }).status(200).json(others);
     })
+    
 
 }
 export const logout = (req, res) => {
