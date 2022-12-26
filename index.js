@@ -22,10 +22,7 @@ app.use(cors({
     origin: "https://crowdhub.netlify.app"
 }))
 app.use(cookieParser())
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
+
 
 //IMAGE UPLOAD MANAGEMENT AND ITS NAMING
 const storage = multer.diskStorage({
