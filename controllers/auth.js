@@ -51,6 +51,9 @@ export const login = (req, res) => {
         //httpOnly=>only our script can access the cookie
         res.cookie("accessToken", token, {
             httpOnly: true,
+       secure:true,
+       sameSite:'none',
+       domain: '.netlify.app'
         }).status(200).json(others);
     })
 
