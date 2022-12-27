@@ -11,16 +11,16 @@ export const getUser = (req, res) => {
         return res.json(info)
     })
 }
-export const getNews = async (req, res) => {
-    const searchId = req.params.searchId;
-    let requestEndpoint = `https://api.currentsapi.services/v1/search?keywords=${searchId}&language=en&apiKey=sRm4uU7AOS5nIyJilHwoxsoKCkbbDRsfRMI2KZWLwqbjAVK0`
-    const fetchOptions = {
-        method: 'GET'
-    }
-    const response = await fetch(requestEndpoint, fetchOptions);
-    const jsonResponse = await response.json();
-    res.json(jsonResponse);
-}
+// export const getNews = async (req, res) => {
+//     const searchId = req.params.searchId;
+//     let requestEndpoint = `https://api.currentsapi.services/v1/search?keywords=${searchId}&language=en&apiKey=sRm4uU7AOS5nIyJilHwoxsoKCkbbDRsfRMI2KZWLwqbjAVK0`
+//     const fetchOptions = {
+//         method: 'GET'
+//     }
+//     const response = await fetch(requestEndpoint, fetchOptions);
+//     const jsonResponse = await response.json();
+//     res.json(jsonResponse);
+// }
 
 
 export const searchUser = (req, res) => {
